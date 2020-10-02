@@ -1,2 +1,2 @@
-# celo-demo
-A basic demonstration on Celo blockchain
+# Celo Demo
+A basic wallet demonstration on Celo blockchain
