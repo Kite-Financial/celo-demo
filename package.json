@@ -1,0 +1,28 @@
+{
+  "name": "kf-celo-demo",
+  "version": "1.0.0",
+  "description": "A repo to get started with the exercise outline here: https://docs.celo.org/v/master/developer-guide/start/hellocelo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kite Financial",
+  "license": "MIT",
+  "dependencies": {
+    "@celo/contractkit": "^0.4.0",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "web3": "^1.2.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kite-Financial/celo-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kite-Financial/celo-demo/issues"
+  },
+  "homepage": "https://github.com/Kite-Financial/celo-demo#readme"
+}
