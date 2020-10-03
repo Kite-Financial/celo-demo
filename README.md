@@ -11,13 +11,13 @@ This web demo gives a priemer insight to what Kite Financial users would be able
 Now that you are here, you can begin in few mins, please follow the steps below to run this demo locally on your machine.
 
 <h3>Run</h3>
-  
-  1. git clone https://github.com/Kite-Financial/celo-demo.git
-  2. cd celo-demo
-  3. npm i
-  4. node app.js
-  5. open http://localhost:3000/
-  
+
+          1. git clone https://github.com/Kite-Financial/celo-demo.git
+          2. cd celo-demo
+          3. npm i
+          4. node app.js
+          5. open http://localhost:3000/
+
   
   
   <h3>Creating a Celo Account</h3>
