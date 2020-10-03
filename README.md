@@ -1,8 +1,8 @@
-#Celo Demo
+
 
 To the community and supporters of Celo and Kite Financial,
 
-This demo gives a priemer insight to what Kite Financial users would be able to do with Celo & cUSD via the Kite Financial wallet. 
+This web demo gives a priemer insight to what Kite Financial users would be able to do with Celo & cUSD via the Kite Financial wallet. 
 
 ![Kite Financial CeloCamp Account Demo](https://kitefinancial.io/celo-demo/kf-celo-demo2.png)
 
@@ -33,9 +33,10 @@ Ones Celo is enabled on the kite Financial wallet, users can swap from bitcoin t
 <h3>Funding your Celo account</h3>
 
 This demo uses testnet, to fund test net please use https://celo.org/build/faucet. 
+![Fund Celo Account](https://kitefinancial.io/celo-demo/kf-celo-demo3.png)
 
 <h3>Funding your live Celo account</h3>
-You can buy Celo with credit, debit or bank transfer (Europe users) on https://kitefinancial.io/#buy or get the app https://kitefinancial.io/download
+You can send your Celo address to anyone and receive Celo, or you can buy Celo with credit, debit or bank transfer (Europe users) on https://kitefinancial.io/#buy or get the app https://kitefinancial.io/download
 
 ![Buy Celo with Kite Financial Account](https://kitefinancial.io/celo-demo/kf-celo-demo5.png)
 
