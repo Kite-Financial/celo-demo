@@ -16,7 +16,7 @@ Now that you are here, you can begin in few mins, please follow the steps below 
           2. cd celo-demo
           3. npm i
           4. node app.js
-          5. open http://localhost:3000/
+open http://localhost:3000/
 
   
   
