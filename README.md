@@ -49,3 +49,6 @@ In bid to connect Africa financially, users will be able to send cash across bor
 
 <h3>Security</h3>
 This demo uses Alfajores testnet, thus, this demonstration shows in practice what to expect on Kite Financial with Celo added would look like, but on mainnet the entire system will be different to provide simpler usage, and security of accounts.
+
+<h3>Notice</h3>
+The bitcoin wallet in this demo is only for donation purposes. To operate a functional bitcoin wallet please download the Kite Financial Wallet on <a href='https://apps.apple.com/us/app/id1524242232'>App Store</a> or <a href='https://play.google.com/store/apps/details?id=io.kitefinancial.wallet'>Google Play</a>, or use our web wallet at https://kitefinancial.io
