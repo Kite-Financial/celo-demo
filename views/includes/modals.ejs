@@ -1,0 +1,141 @@
+
+<!-- Modal Enable Celo -->
+<div id="setup" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h4 class="modal-title">Generate Celo wallet</h4>
+      </div>
+      <div class="modal-body">
+        <p>This process will generate a Celo wallet for you with private keys.</p>
+
+        <form method="POST" action="/create-wallet">
+          <button class="btn btn-md btn-primary" type="submit">Create Celo Account</button>
+        </form>
+        <i class="fa fa-spinner"></i>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Modal Request BTC or Celo -->
+<div id="requestBTC" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h4 class="modal-title">Receive</h4>
+        </div>
+        <div class="modal-body">
+            <p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=<%= wallets[0].address %>&size=150x150"/>
+            <br>
+            <%= wallets[0].address %>
+            </p>
+
+          <p>Tap to copy and share this address or QR code with sender</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+
+<!-- Modal Request BTC or Celo -->
+<div id="requestCELO" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h4 class="modal-title">Receive</h4>
+      </div>
+      <div class="modal-body">
+          <p>
+            <% if (wallets.length > 1){ %>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=<%= wallets[1].address %>&size=150x150"/>
+          <br>
+          <%= wallets[1].address %>
+          </p>
+
+          <% } %>
+
+        <p>Tap to copy and share this address or QR code with sender</p>
+
+        <p>Fund testnet accounts <a href='https://celo.org/build/faucet'>here </a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  
+<!-- Modal Send Celo -->
+<div id="send" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h4 class="modal-title">Send</h4>
+        </div>
+        <div class="modal-body">
+            
+          <p>Just a demonstration, visit <a href='https://kitefinancial.io' target='_blank'>KiteFinancial.io</a> for a working bitcoin wallet</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+
+  
+  
+<!-- Modal Swap Celo -->
+<div id="swap" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <h4 class="modal-title">Swap</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input class="form-control" placeholder='amount to swap' type='text'/>
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-sm btn-outline-danger">Swap</button>
+          </div>
+
+        </div>
+
+        <p>In the KF wallet, swapping bitcoin to Celo or cUSD and the reverse would be possible.</p>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  

@@ -1,0 +1,65 @@
+<%- include('includes/head.ejs') %>
+</head>
+
+<body>
+    <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <div class="wallet-section">
+            <h4>A basic Celo Demo</h4>
+            <div class="brand">
+                <img class="logo-celo" src="../img/celo.png">
+                <img class="logo-kf" src="../img/logo-dark.png">
+
+            </div>      
+
+       <% if ( wallets.length === 1 ){ %>
+
+        <div class="alert-danger">
+            <strong>
+                Please enable Celo wallet to use CELO and cUSD
+            </strong>
+            <button class="btn btn-sm btn-info" type="button" data-toggle="modal" data-target="#setup">Enable</button>
+ 
+        </div>
+
+        <div class="clearfix"></div>
+        
+        <% } %>
+
+       <% if ( wallets.length > 0){ %>
+
+
+        <% for (let wallet of wallets) { %>
+            <article class="card product-item">
+                <header class="card__header">
+                    <h1 class="product__title"><%= wallet.symbol %></h1>
+                </header>
+                <div class="card__content">
+                    <h2 class="product__price"><%= wallet.balance %></h2>
+                    <p class="product__description"><%= wallet.title %> balance</p>
+                </div>
+                <div class="card__actions">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <button class="btn btn-sm btn-outline-success" type="button"  data-toggle="modal" data-target="#request<%= wallet.symbol %>">Request</button>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <button class="btn btn-sm btn-outline-danger" type="button" data-toggle="modal" data-target="#send">Send</button>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <button class="btn btn-sm btn-outline-success" type="button" data-toggle="modal" data-target="#swap" <%= wallets.length === 1 ? 'disabled' : ''  %>>Swap</button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+        <% } %>
+
+       <% } %>
+        </div>
+    </main>
+ <%- include('includes/modals.ejs') %>
+<%- include('includes/end.ejs') %>
